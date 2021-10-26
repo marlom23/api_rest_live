@@ -88,8 +88,8 @@ switch ( strtoupper( $method ) ) {
 
 		$books[] = json_decode( $json, true );
 
-		//echo array_keys($books)[count($books)-1];
-    echo json_encode( $books );
+		 echo array_keys($books)[count($books)-1];
+    
 		break;
 	case 'PUT':
 		if ( !empty($resourceId) && array_key_exists( $resourceId, $books ) ) {
